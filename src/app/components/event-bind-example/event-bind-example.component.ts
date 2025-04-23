@@ -11,13 +11,13 @@ export class EventBindExampleComponent {
   userInput: string = '';
 
   incrementTimes(){
-    // this.times = this.times + 1
-    this.times++;
+    this.times = this.times + 1
+    //this.times++;
   }
 
   decrementTimes(){
-    // this.times = this.times - 1;
-    this.times--;
+    this.times = this.times - 1;
+    //this.times--;
   }
 
   reset(){
