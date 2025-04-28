@@ -9,12 +9,13 @@ import { Person } from 'src/app/shared/interfaces/person';
 })
 export class PersonTableComponent {
   @Input() personInput: Person | undefined;
-  name = "Nikolas"
+
+  name = "Thanasis"
 
   person = {
-    givenName: "Nikolas",
-    surName: "Baxevanios",
-    age : 31,
-    email: "nikos@aueb.gr"
+    givenName:"Thanasis",
+    surName: "Androutsos",
+    age: 20,
+    email:'thanasis@aueb.gr'
   }
 }
