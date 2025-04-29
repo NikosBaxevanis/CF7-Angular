@@ -11,8 +11,8 @@ import {
 @Component({
   selector: 'app-component-output-example',
   imports: [SimpleDatatableComponent],
-  templateUrl: './component-output-example.component.html',
-  styleUrl: './component-output-example.component.css'
+  templateUrl: './compenent-output-example.component.html',
+  styleUrl: './compenent-output-example.component.css'
 })
 export class ComponentOutputExampleComponent {
   manyPerson = ManyPerson;

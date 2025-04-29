@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ComponentOutputExampleComponent } from './component-output-example.component';
+import { ComponentOutputExampleComponent } from './compenent-output-example.component';
 
 describe('ComponentOutputExampleComponent', () => {
   let component: ComponentOutputExampleComponent;
