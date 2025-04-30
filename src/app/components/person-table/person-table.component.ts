@@ -19,4 +19,16 @@ export class PersonTableComponent {
     age: 20,
     email:'thanasis@aueb.gr'
   }
+
+  isPerson():boolean{
+    if(this.personInput)
+    return this.personInput && 'address' in this.personInput;
+  return false;
+  }
+
+  isEperson():boolean{
+    if(this.personInput)
+      return 'education' in this.personInput;
+    return false;
+  }
 }
