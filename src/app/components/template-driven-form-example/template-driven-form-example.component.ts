@@ -3,6 +3,7 @@ import { EpersonTemplateDrivenFormComponent } from '../eperson-template-driven-f
 import { ComponentInputExampleComponent } from "../component-input-example/component-input-example.component";
 import { PersonTableComponent } from '../person-table/person-table.component';
 import { SimpleDatatableComponent } from '../simple-datatable/simple-datatable.component';
+import { EPerson } from 'src/app/shared/interfaces/eperson';
 
 @Component({
   selector: 'app-template-driven-form-example',
@@ -11,5 +12,10 @@ import { SimpleDatatableComponent } from '../simple-datatable/simple-datatable.c
   styleUrl: './template-driven-form-example.component.css'
 })
 export class TemplateDrivenFormExampleComponent {
+  persons: EPerson[] = [];
 
+  onPerson(data: EPerson ) {
+    this.persons.push(data)
+    console.log("Father",this.persons);
+  }
 }
