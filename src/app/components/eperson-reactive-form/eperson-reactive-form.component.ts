@@ -43,5 +43,18 @@ export class EpersonReactiveFormComponent {
 
   onSubmit(data: any) {
     console.log("Data ", data)
+    console.log(this.form)
+    console.log("givenName>>" , this.form.controls['givenName'].value)
+    this.form.controls["surName"].setValue("Papakis")
+  }
+
+  onSetValue(){
+    this.form.setValue ( {
+      givenName: 'Kostas',
+      surName : 'Lalakis',
+      age: '19',
+      email :'lalakis@aueb.gr',
+      education :'Bachelor degree'
+    })
   }
 }
